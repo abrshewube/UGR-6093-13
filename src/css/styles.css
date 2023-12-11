@@ -1,0 +1,363 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.grid-header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-header li {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-header li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+/* Mobile Menu styles */
+#menuToggle {
+    display: none;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+#menuToggle span {
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+}
+
+#menuToggle span:nth-child(2) {
+    width: 20px;
+}
+
+#menuToggle span:nth-child(3) {
+    width: 15px;
+}
+
+#menuToggle ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+}
+
+#menuToggle ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px;
+}
+
+/* Page Title styles */
+.grid-container section:nth-child(2) {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.grid-container section h1 {
+    color: #333;
+}
+
+.grid-container section span {
+    color: #999;
+}
+
+/* Main Content styles */
+.grid-container section:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.grid-container section div {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container section h3 {
+    color: #333;
+}
+
+.grid-container section p {
+    color: #666;
+}
+
+.grid-container section i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.grid-container section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.grid-container section ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.grid-container section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Contact Form styles */
+.grid-container section form {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-container section form div {
+    position: relative;
+}
+
+.grid-container section form input,
+.grid-container section form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.grid-container section form button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-container section form button:hover {
+    background: #555;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-header {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .grid-header ul {
+        justify-content: flex-end;
+    }
+
+    .grid-header li {
+        margin: 0 5px;
+    }
+
+    .grid-container section:nth-child(2) {
+        padding: 20px 0;
+       .grid-container section h1 {
+        font-size: 24px;
+    }
+
+    .grid-container section span {
+        font-size: 14px;
+    }
+
+    .grid-container section:nth-child(3) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .grid-container section div {
+        padding: 10px;
+    }
+}
+
+/* Mobile Portrait Devices */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-header {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .grid-header ul {
+        justify-content: flex-end;
+    }
+
+    .grid-header li {
+        margin: 0 5px;
+    }
+
+    .grid-container section:nth-child(2) {
+        padding: 20px 0;
+    }
+
+    .grid-container section h1 {
+        font-size: 24px;
+    }
+
+    .grid-container section span {
+        font-size: 14px;
+    }
+
+    .grid-container section:nth-child(3) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .grid-container section div {
+        padding: 10px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .grid-header {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .grid-header ul {
+        justify-content: flex-start;
+    }
+
+    .grid-header li {
+        margin: 0 15px;
+    }
+
+    .grid-container section:nth-child(2) {
+        padding: 50px 0;
+    }
+
+    .grid-container section h1 {
+        font-size: 36px;
+    }
+
+    .grid-container section span {
+        font-size: 18px;
+    }
+
+    .grid-container section:nth-child(3) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+    }
+
+    .grid-container section div {
+        padding: 20px;
+    }
+
+    .grid-container section h3 {
+        font-size: 24px;
+    }
+
+    .grid-container section p {
+        font-size: 16px;
+    }
+}
+
+/* Laptop/Desktop Devices */
+@media only screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .grid-header {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 50px;
+    }
+
+    .grid-header ul {
+        justify-content: flex-start;
+    }
+
+    .grid-header li {
+        margin: 0 15px;
+    }
+
+    .grid-container section:nth-child(2) {
+        padding: 100px 0;
+    }
+
+    .grid-container section h1 {
+        font-size: 48px;
+    }
+
+    .grid-container section span {
+        font-size: 24px;
+    }
+
+    .grid-container section:nth-child(3) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 100px;
+    }
+
+    .grid-container section div {
+        padding: 40px;
+    }
+
+    .grid-container section h3 {
+        font-size: 36px;
+    }
+
+    .grid-container section p {
+        font-size: 18px;
+    }
+}
+}

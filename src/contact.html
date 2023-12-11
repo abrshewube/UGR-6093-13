@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Contact - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body class="grid-container contact-page">
     <!-- Header Starts -->
-    <header>
+    <header class="grid-header">
         <!-- Fixed Navigation Starts -->
         <ul>
             <li>
@@ -57,60 +58,58 @@
     </header>
     <!-- Header Ends -->
     <!-- Page Title Starts -->
-    <section>
+    <section class="grid-section">
         <h1>get in <span>touch</span></h1>
         <span>contact</span>
     </section>
     <!-- Page Title Ends -->
     <!-- Main Content Starts -->
-    <section>
-        <div>
-            <div>
-                <!-- Left Side Starts -->
-                <div>
-                    <h3>Don't be shy !</h3>
-                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                    <p>
-                        <i></i>
-                        <span>mail me</span>abrshefru1427@gmail.com
-                    </p>
-                    <p>
-                        <i></i>
-                        <span>call me</span>+251965075728
-                    </p>
-                    <ul>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                    </ul>
-                </div>
-                <!-- Left Side Ends -->
-                <!-- Contact Form Starts -->
-                <div>
-                    <form method="post">
-                        <div>
-                            <div>
-                                <input type="text" name="name" placeholder="YOUR NAME">
-                            </div>
-                            <div>
-                                <input type="email" name="email" placeholder="YOUR EMAIL">
-                            </div>
-                            <div>
-                                <input type="text" name="subject" placeholder="YOUR SUBJECT">
-                            </div>
-                            <div>
-                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
-                                <button type="submit">Send Message</button>
-                            </div>
-                            <div>
-                                <span></span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- Contact Form Ends -->
+    <section class="grid-section contact-content">
+        <div class="contact-container">
+            <!-- Left Side Starts -->
+            <div class="contact-info">
+                <h3>Don't be shy !</h3>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    <span>mail me</span>abrshefru1427@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    <span>call me</span>+251965075728
+                </p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
             </div>
+            <!-- Left Side Ends -->
+            <!-- Contact Form Starts -->
+            <div class="contact-form">
+                <form method="post">
+                    <div>
+                        <div>
+                            <input type="text" name="name" placeholder="YOUR NAME">
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="YOUR EMAIL">
+                        </div>
+                        <div>
+                            <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                            <button type="submit">Send Message</button>
+                        </div>
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Contact Form Ends -->
         </div>
     </section>
 </body>
