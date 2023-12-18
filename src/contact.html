@@ -5,106 +5,125 @@
     <meta charset="utf-8">
     <title>Contact - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Header Starts -->
-    <header>
+    <section class="section">
         <!-- Fixed Navigation Starts -->
-        <ul>
-            <li>
-                <i class="fa fa-home"></i>
-                <a href="index.html">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <i class="fa fa-home"></i>
                     <h2>Home</h2>
                 </a>
-            </li>
-            <li>
-                <i class="fa fa-user"></i>
-                <a href="about.html">
-                    <h2>About</h2>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-            </li>
-            <li>
-                <i class="fa fa-briefcase"></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li>
-                <i class="fa fa-envelope-open"></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-        </ul>
-        <!-- Fixed Navigation Ends -->
-        <!-- Mobile Menu Starts -->
-        <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul>
-                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                </ul>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="about.html">
+                        <i class="fa fa-user"></i>
+                        <h2>About</h2>
+                    </a>
+
+                    <a class="navbar-item" href="portfolio.html">
+                        <i class="fa fa-briefcase"></i>
+                        <h2>Portfolio</h2>
+                    </a>
+
+                    <a class="navbar-item" href="contact.html">
+                        <i class="fa fa-envelope-open"></i>
+                        <h2>Contact</h2>
+                    </a>
+                </div>
             </div>
         </nav>
-        <!-- Mobile Menu Ends -->
-    </header>
+    </section>
     <!-- Header Ends -->
+
     <!-- Page Title Starts -->
-    <section>
-        <h1>get in <span>touch</span></h1>
-        <span>contact</span>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">get in <span>touch</span></h1>
+                <h2 class="subtitle">contact</h2>
+            </div>
+        </div>
     </section>
     <!-- Page Title Ends -->
+
     <!-- Main Content Starts -->
-    <section>
-        <div>
-            <div>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
                 <!-- Left Side Starts -->
-                <div>
-                    <h3>Don't be shy !</h3>
-                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                    <p>
-                        <i></i>
-                        <span>mail me</span>abrshefru1427@gmail.com
-                    </p>
-                    <p>
-                        <i></i>
-                        <span>call me</span>+251965075728
-                    </p>
-                    <ul>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                        <li><a href="#"><i ></i></a></li>
-                    </ul>
+                <div class="column is-half">
+                    <div>
+                        <h3>Don't be shy!</h3>
+                        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <span>mail me</span>abrshefru1427@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa fa-phone"></i>
+                            <span>call me</span>+251965075728
+                        </p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- Left Side Ends -->
+
                 <!-- Contact Form Starts -->
-                <div>
+                <div class="column is-half">
                     <form method="post">
-                        <div>
-                            <div>
-                                <input type="text" name="name" placeholder="YOUR NAME">
+                        <div class="field">
+                            <label class="label">Your Name</label>
+                            <div class="control">
+                                <input class="input" type="text" name="name" placeholder="Your Name">
                             </div>
-                            <div>
-                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Your Email</label>
+                            <div class="control">
+                                <input class="input" type="email" name="email" placeholder="Your Email">
                             </div>
-                            <div>
-                                <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Your Subject</label>
+                            <div class="control">
+                                <input class="input" type="text" name="subject" placeholder="Your Subject">
                             </div>
-                            <div>
-                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
-                                <button type="submit">Send Message</button>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Your Message</label>
+                            <div class="control">
+                                <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
                             </div>
-                            <div>
-                                <span></span>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -113,6 +132,8 @@
             </div>
         </div>
     </section>
+    <!-- Main Content Ends -->
+
 </body>
 
 </html>

@@ -5,71 +5,58 @@
     <meta charset="utf-8">
     <title>Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header Starts -->
-    <header id="navbar-collapse-toggle">
-        <!-- Fixed Navigation Starts -->
-        <ul>
-            <li>
-                <a href="index.html">
-                    <h2>Home</h2>
-                </a>
-            </li>
-            <li>
-                <a href="about.html">
-                    <h2>About</h2>
-                </a>
-            </li>
-            <li>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-        </ul>
-        <!-- Fixed Navigation Ends -->
-        <!-- Mobile Menu Starts -->
-        <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul>
-                    <li><a href="index.html"><span>Home</span></a></li>
-                    <li><a href="about.html"><span>About</span></a></li>
-                    <li><a href="portfolio.html"><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><span>Contact</span></a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Main Content Starts -->
-    <section>
-        <div>
-            <div></div>
-            <div class="row home-details-container align-items-center">
-                <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-                <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-                    <div>
-                        <h6 class="text-uppercase mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
-                        <h1 class="text-uppercase"><span>I'm</span> Abrham Wube</h1>
-                        <p>I'm a web designer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
-                        <a href="about.html">more about me</a>
+
+    <header class="section">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <h2>Home</h2>
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="about.html">
+                            <h2>About</h2>
+                        </a>
+
+                        <a class="navbar-item" href="portfolio.html">
+                            <h2>Portfolio</h2>
+                        </a>
+
+                        <a class="navbar-item" href="contact.html">
+                            <h2>Contact</h2>
+                        </a>
                     </div>
                 </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h6 class="title is-6">hi there !</h6>
+                <h1 class="title is-1">I'm Abrham Wube</h1>
+                <p class="subtitle is-4">I'm a web designer focused on crafting clean & user‑friendly experiences. I am passionate about building excellent software that improves the lives of those around me.</p>
+                <a href="about.html" class="button is-link is-light">More about me</a>
             </div>
         </div>
     </section>
-    <!-- Main Content Ends -->
+
 </body>
 
 </html>

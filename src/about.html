@@ -5,95 +5,76 @@
     <meta charset="utf-8">
     <title>About Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    
-    <div id="showSwitcher"><i></i></div>
-    <header>
-        <ul>
-            <li>
-                <i></i>
-                <a href="index.html">
-                    <h2>Home</h2>
-                </a>
-            </li>
-            <li>
-                <i></i>
-                <a href="about.html">
-                    <h2>About</h2>
-                </a>
-            </li>
-            <li>
-                <i></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li>
-                <i></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <section>
-        <h1>ABOUT <span>ME</span></h1>
-        <span>Resume</span>
-    </section>
-    <section>
-        <div>
-            <div>
-                <h3>personal infos</h3>
-            </div>
-            <div>
-                <!-- Personal information content goes here -->
-            </div>
-            <div>
-                <a href="img/mycv.pdf" download>Download CV</a>
+    <div class="container" id="showSwitcher"><i></i></div>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">ABOUT <span>ME</span></h1>
+                <h2 class="subtitle">Resume</h2>
             </div>
         </div>
     </section>
-    <section>
-        <div>
-            <div>
-                <h3>My Skills</h3>
-            </div>
-            <div>
-                <!-- Skills content goes here -->
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="content">
+                        <h3>Personal Infos</h3>
+                        <!-- Personal information content goes here -->
+                    </div>
+                    <div>
+                        <a class="button is-link" href="img/mycv.pdf" download>Download CV</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <div>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="content">
+                        <h3>My Skills</h3>
+                        <!-- Skills content goes here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
             <h3>Experience <span>&</span> Education</h3>
-        </div>
-        <div>
-            <div>
-                <ul>
-                    <li>
-                        <div>
-                            <i></i>
-                        </div>
-                        <span>2021 - Present</span>
-                        <h5>Software Engineer <span>Addis Ababa University</span></h5>
-                    </li>
-                    <li>
-                        <div>
-                            <i></i>
-                        </div>
-                        <span>2018 - 2022</span>
-                        <h5>Frontend Development <span>freecodecamp</span></h5>
-                    </li>
-                    <li>
-                        <div>
-                            <i></i>
-                        </div>
-                        <span>2020-current</span>
-                        <h5>Backend <span>codedamn</span></h5>
-                    </li>
-                </ul>
+            <div class="columns">
+                <div class="column">
+                    <ul>
+                        <li>
+                            <div class="icon"><i class="fas fa-briefcase"></i></div>
+                            <span>2021 - Present</span>
+                            <h5>Software Engineer <span>Addis Ababa University</span></h5>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-briefcase"></i></div>
+                            <span>2018 - 2022</span>
+                            <h5>Frontend Development <span>freecodecamp</span></h5>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-briefcase"></i></div>
+                            <span>2020-current</span>
+                            <h5>Backend <span>codedamn</span></h5>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
