@@ -5,43 +5,45 @@
     <meta charset="utf-8">
     <title>Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
-<body>
+<body class="bg-gray-100">
     <!-- Header Starts -->
-    <header id="navbar-collapse-toggle">
+    <header id="navbar-collapse-toggle" class="bg-white">
         <!-- Fixed Navigation Starts -->
-        <ul>
+        <ul class="hidden lg:flex justify-end space-x-4 px-8 py-4">
             <li>
                 <a href="index.html">
-                    <h2>Home</h2>
+                    <h2 class="text-lg">Home</h2>
                 </a>
             </li>
             <li>
                 <a href="about.html">
-                    <h2>About</h2>
+                    <h2 class="text-lg">About</h2>
                 </a>
             </li>
             <li>
                 <a href="portfolio.html">
-                    <h2>Portfolio</h2>
+                    <h2 class="text-lg">Portfolio</h2>
                 </a>
             </li>
             <li>
                 <a href="contact.html">
-                    <h2>Contact</h2>
+                    <h2 class="text-lg">Contact</h2>
                 </a>
             </li>
         </ul>
         <!-- Fixed Navigation Ends -->
         <!-- Mobile Menu Starts -->
-        <nav role="navigation">
+        <nav role="navigation" class="lg:hidden flex justify-end px-8 py-4">
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul>
+                <ul class="text-black">
                     <li><a href="index.html"><span>Home</span></a></li>
                     <li><a href="about.html"><span>About</span></a></li>
                     <li><a href="portfolio.html"><span>Portfolio</span></a></li>
@@ -53,17 +55,16 @@
     </header>
     <!-- Header Ends -->
     <!-- Main Content Starts -->
-    <section>
-        <div>
-            <div></div>
-            <div class="row home-details-container align-items-center">
-                <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-                <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+    <section class="min-h-screen flex items-center">
+        <div class="container mx-auto">
+            <div class="row home-details-container">
+                <div class="col-lg-4 bg-blue-500 h-full"></div>
+                <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left p-8">
                     <div>
-                        <h6 class="text-uppercase mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
-                        <h1 class="text-uppercase"><span>I'm</span> Abrham Wube</h1>
-                        <p>I'm a web designer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
-                        <a href="about.html">more about me</a>
+                        <h6 class="text-xs lg:hidden">hi there !</h6>
+                        <h1 class="text-3xl lg:text-5xl font-semibold"><span>I'm</span> Abrham Wube</h1>
+                        <p class="text-gray-700">I'm a web designer focused on crafting clean & user‑friendly experiences. I am passionate about building excellent software that improves the lives of those around me.</p>
+                        <a href="about.html" class="text-blue-500">more about me</a>
                     </div>
                 </div>
             </div>
